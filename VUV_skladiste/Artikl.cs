@@ -1,8 +1,20 @@
-﻿using System;using System.Collections.Generic;using ConsoleTables;namespace VUV_skladiste{    internal class Artikl    {        private string sifraArtikla;        private string nazivArtikla;        private string dimenzija;        private decimal cijena;        private decimal debljina;        private decimal sirina;        private decimal duzina;        private string mjernaJedinicaDimenzija;        private string cijenaSaMjerom;        private string jmj;        public decimal Debljina { get { return debljina; } set { debljina = value; } }        public decimal Sirina { get { return sirina; } set { sirina = value; } }        public decimal Duzina { get { return duzina; } set { duzina = value; } }        public string SifraArtikla { get { return sifraArtikla; } set { sifraArtikla = value; } }        public string NazivArtikla { get { return nazivArtikla; } set { nazivArtikla = value; } }        //Olaksava ispis!!!!        public string Dimenzija { get { return dimenzija; } set { dimenzija = $"{debljina}x{sirina}x{duzina} {mjernaJedinicaDimenzija}";} }         public decimal Cijena { get { return cijena; } set { cijena = value; } }        public string MjeraZaCijenu { get { return JMJ; } set { JMJ = value; } }        //Olaksava ispis!!!!        public string CijenaSaMjerom { get { return cijenaSaMjerom; } set { cijenaSaMjerom = $"{cijena}/{jmj}"; } }        public string JMJ { get { return jmj; } set { jmj = value; } }        public Artikl(string sifraArtikla, string nazivArtikla, string dimenzija, string cijenasaJMJ)        {            this.sifraArtikla = sifraArtikla;            this.nazivArtikla = nazivArtikla;            this.dimenzija = dimenzija;            Debljina = FDebljina(dimenzija);            Duzina = FDuzina(dimenzija);            Sirina = FSirina(dimenzija);            mjernaJedinicaDimenzija = FMjera(dimenzija);            cijenaSaMjerom = cijenasaJMJ;            Cijena = FCijena(cijenasaJMJ);            JMJ = FJMJ(cijenasaJMJ);        }        //Metode koje vuce iz stringa dimenzija dimenzije i njihovu mjernu jedinicu        public static decimal FDebljina(string dimenzija)        {            string temp = dimenzija;            return decimal.Parse(temp.Substring(0, temp.IndexOf('x')));        }        public static decimal FSirina(string dimenzija)        {            string temp = dimenzija;            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            return decimal.Parse(temp.Substring(0, temp.IndexOf('x')));        }        public static decimal FDuzina(string dimenzija)        {            string temp = dimenzija;            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            return decimal.Parse(temp.Substring(0, temp.IndexOf(' ')));        }        public static string FMjera(string dimenzija)        {            string temp = dimenzija;            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            temp = temp.Substring(temp.IndexOf(' ') + 1, temp.Length - temp.IndexOf(' ') - 1);            return temp;        }        //metoda koja odvaja cijenu od jmj        public static decimal FCijena(string cijenasaJMJ)        {            string temp = cijenasaJMJ;            string temp2 = temp;            temp2 = temp2.Substring(temp.IndexOf('/'), temp.Length - temp.IndexOf('/'));            temp = temp.Substring(0, temp.Length - temp2.Length);            decimal value = decimal.Parse(temp);            return value;        }
+﻿using System;using System.Collections.Generic;using ConsoleTables;namespace VUV_skladiste{    internal class Artikl    {        private string sifraArtikla;        private string nazivArtikla;        private string dimenzija;        private decimal cijena;        private decimal debljina;        private decimal sirina;        private decimal duzina;        private string mjernaJedinicaDimenzija;        private string cijenaSaMjerom;        private string jmj;        public decimal Debljina { get { return debljina; } set { debljina = value; } }        public decimal Sirina { get { return sirina; } set { sirina = value; } }        public decimal Duzina { get { return duzina; } set { duzina = value; } }        public string SifraArtikla { get { return sifraArtikla; } set { sifraArtikla = value; } }        public string NazivArtikla { get { return nazivArtikla; } set { nazivArtikla = value; } }
+        //Olaksava ispis!!!!
+        public string Dimenzija { get { return dimenzija; } set { dimenzija = $"{debljina}x{sirina}x{duzina} {mjernaJedinicaDimenzija}"; } }
+
+        public decimal Cijena { get { return cijena; } set { cijena = value; } }        public string MjeraZaCijenu { get { return JMJ; } set { JMJ = value; } }
+        //Olaksava ispis!!!!
+        public string CijenaSaMjerom { get { return cijenaSaMjerom; } set { cijenaSaMjerom = $"{cijena}/{jmj}"; } }        public string JMJ { get { return jmj; } set { jmj = value; } }        public Artikl(string sifraArtikla, string nazivArtikla, string dimenzija, string cijenasaJMJ)        {            this.sifraArtikla = sifraArtikla;            this.nazivArtikla = nazivArtikla;            this.dimenzija = dimenzija;            Debljina = FDebljina(dimenzija);            Duzina = FDuzina(dimenzija);            Sirina = FSirina(dimenzija);            mjernaJedinicaDimenzija = FMjera(dimenzija);            cijenaSaMjerom = cijenasaJMJ;            Cijena = FCijena(cijenasaJMJ);            JMJ = FJMJ(cijenasaJMJ);        }
+        //Metode koje vuce iz stringa dimenzija dimenzije i njihovu mjernu jedinicu
+        public static decimal FDebljina(string dimenzija)        {            string temp = dimenzija;            return decimal.Parse(temp.Substring(0, temp.IndexOf('x')));        }        public static decimal FSirina(string dimenzija)        {            string temp = dimenzija;            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            return decimal.Parse(temp.Substring(0, temp.IndexOf('x')));        }        public static decimal FDuzina(string dimenzija)        {            string temp = dimenzija;            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            return decimal.Parse(temp.Substring(0, temp.IndexOf(' ')));        }        public static string FMjera(string dimenzija)        {            string temp = dimenzija;            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            temp = temp.Substring(temp.IndexOf('x') + 1, temp.Length - temp.IndexOf('x') - 1);            temp = temp.Substring(temp.IndexOf(' ') + 1, temp.Length - temp.IndexOf(' ') - 1);            return temp;        }
+        //metoda koja odvaja cijenu od jmj
+        public static decimal FCijena(string cijenasaJMJ)        {            string temp = cijenasaJMJ;            string temp2 = temp;            temp2 = temp2.Substring(temp.IndexOf('/'), temp.Length - temp.IndexOf('/'));            temp = temp.Substring(0, temp.Length - temp2.Length);            decimal value = decimal.Parse(temp);            return value;        }
         //metoda koja odvaja jmj od cijene
-        public static string FJMJ(string cijenasaJMJ)        {            string temp = cijenasaJMJ;            temp = temp.Substring(temp.IndexOf('/')+ 1, temp.Length - temp.IndexOf('/') - 1);            return temp;        }
+        public static string FJMJ(string cijenasaJMJ)        {            string temp = cijenasaJMJ;            temp = temp.Substring(temp.IndexOf('/') + 1, temp.Length - temp.IndexOf('/') - 1);            return temp;        }
         //Metoda dohvaca artikl, koristimo ju da vidimo postoji li taj artikl ili ne
-        public static Artikl DohvatiArtikl(string sifra)        {            List<Artikl> artikli = XML.ListaArtikala();            foreach (Artikl artikl in artikli)            {                if (artikl.SifraArtikla == sifra)                {                    return artikl;                }            }            return null;        }        //Izraduje artikl, tijekom netocnog unosa unosimo cijeli artikl ispocetka        public static void NoviArtikl()        {            try
+        public static Artikl DohvatiArtikl(string sifra)        {            List<Artikl> artikli = XML.ListaArtikala();            foreach (Artikl artikl in artikli)            {                if (artikl.SifraArtikla == sifra)                {                    return artikl;                }            }            return null;        }
+        //Izraduje artikl, tijekom netocnog unosa unosimo cijeli artikl ispocetka
+        public static void NoviArtikl()        {            try
             {
                 Console.Clear();
                 Console.WriteLine("Upisite sifru artikla");
@@ -11,7 +23,7 @@
                 {
                     throw new Iznimka("Postoji artikl sa zadanom sifrom");
                 }
-                if( sifraArtikla == null || !int.TryParse(sifraArtikla, out _) || sifraArtikla.Contains("-"))
+                if (sifraArtikla == null || !int.TryParse(sifraArtikla, out _) || sifraArtikla.Contains("-"))
                 {
                     throw new Iznimka("Sifra netocno upisana, sadrzi slova, simbole ili je prazna!");
                 }
@@ -101,7 +113,11 @@
                     Console.Clear();
                     NoviArtikl();
                 }
-            }        }        //Ispisuje sve artikle, dostupne i ne dostupne        public static void IspisSvihArtikala()        {            Console.Clear();            List<Artikl> lista = XML.ListaArtikala();            ConsoleTable table = new ConsoleTable("Sifra", "Naziv", "Dimenzije", "JMJ", "Cijena");            foreach (Artikl artikl in lista)            {                table.AddRow(artikl.sifraArtikla, artikl.nazivArtikla, artikl.Dimenzija, artikl.JMJ, artikl.Cijena);            }            table.Write();            Console.ReadKey(true);        }        //Azurira artikl i unosi ga u XML        public static void AzurirajArtikl()
+            }        }
+        //Ispisuje sve artikle, dostupne i ne dostupne
+        public static void IspisSvihArtikala()        {            Console.Clear();            List<Artikl> lista = XML.ListaArtikala();            ConsoleTable table = new ConsoleTable("Sifra", "Naziv", "Dimenzije", "JMJ", "Cijena");            foreach (Artikl artikl in lista)            {                table.AddRow(artikl.sifraArtikla, artikl.nazivArtikla, artikl.Dimenzija, artikl.JMJ, artikl.Cijena);            }            table.Write();            Console.ReadKey(true);        }
+        //Azurira artikl i unosi ga u XML
+        public static void AzurirajArtikl()
         {
             Console.Clear();
             List<Artikl> artiklList = XML.ListaArtikala();
@@ -113,7 +129,7 @@
             opcije[artiklList.Count] = "Izlaz";
             Skladiste Meni = new Skladiste("Sifra artikla, naziv artikla, dimenzije, cijena", opcije);
             int trenutniIndeks = Meni.Pokreni();
-            if(trenutniIndeks == artiklList.Count)
+            if (trenutniIndeks == artiklList.Count)
             {
                 Console.Clear();
                 Skladiste.PocniAplikaciju(Skladiste.VuvLogo());
@@ -308,7 +324,7 @@
                                                 break;
                                             }
                                         }
-                                    XML.AzurirajArtikl("MjernaJedinica", promjena, artiklList[trenutniIndeks].SifraArtikla);
+                                        XML.AzurirajArtikl("MjernaJedinica", promjena, artiklList[trenutniIndeks].SifraArtikla);
                                         break;
                                     }
                             }
@@ -318,7 +334,7 @@
                 case 2:
                     {
                         Console.WriteLine("Jeste li sigurni da hocete cijenu azurirati? Ako niste pritisnite escape.");
-                        if(Console.ReadKey().Key == ConsoleKey.Escape)
+                        if (Console.ReadKey().Key == ConsoleKey.Escape)
                         {
                             AzurirajArtikl();
                         }

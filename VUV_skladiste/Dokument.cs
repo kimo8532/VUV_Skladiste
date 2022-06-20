@@ -21,7 +21,7 @@
             int i;
             for (i = 0; i < dokuments.Count; i++)
             {
-                if(dokuments[i].iznosIzlaz == 0)
+                if (dokuments[i].iznosIzlaz == 0)
                 {
                     opcije[i] = $"{dokuments[i].Tip} {dokuments[i].Datum} {dokuments[i].IznosUlaz}";
                 }
@@ -84,7 +84,7 @@
                     }
                     else if (Convert.ToInt32(dokuments[j].Datum.Substring(6, 4)) == Convert.ToInt32(dokuments[j + 1].Datum.Substring(6, 4)))
                     {
-                        if(Convert.ToInt32(dokuments[j].Datum.Substring(3, 2)) < Convert.ToInt32(dokuments[j + 1].Datum.Substring(3, 2)))
+                        if (Convert.ToInt32(dokuments[j].Datum.Substring(3, 2)) < Convert.ToInt32(dokuments[j + 1].Datum.Substring(3, 2)))
                         {
                             Dokument temp = dokuments[j];
                             dokuments[j] = dokuments[j + 1];
