@@ -55,7 +55,6 @@
             {
                 Console.Clear();
                 PrikaziMeni();                do                {                    ConsoleKeyInfo keyInfo = Console.ReadKey(true);                    gumbPritisnuti = keyInfo.Key;                    System.Threading.Thread.Sleep(10);                } while (Console.KeyAvailable);
-
                 if (gumbPritisnuti == ConsoleKey.DownArrow)
                 {
                     if (trenutniIndeks != opcije.Length - 1)
