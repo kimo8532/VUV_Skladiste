@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Artikli>
+  <Artikl Sifra="123456780" Naziv="Ploča OSB3 pero/utor" Cijena="126" JMJ="m2">
+    <Dimenzija Debljina="22" Sirina="625" Duzina="2500" MjernaJedinica="mm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123456781" Naziv="Ploča OSB3 pero/utor" Cijena="103" JMJ="m2">
+    <Dimenzija Debljina="18" Sirina="625" Duzina="2500" MjernaJedinica="mm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123456782" Naziv="Ploča OSB3 pero/utor" Cijena="85.13" JMJ="m2">
+    <Dimenzija Debljina="15" Sirina="625" Duzina="2500" MjernaJedinica="mm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123456783" Naziv="Ploča OSB3 pero/utor" Cijena="68.10" JMJ="m2">
+    <Dimenzija Debljina="12" Sirina="625" Duzina="2500" MjernaJedinica="mm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123456784" Naziv="Opeka Leiertherm 25 U+Z" Cijena="14.61" JMJ="kom">
+    <Dimenzija Debljina="25" Sirina="375" Duzina="238" MjernaJedinica="mm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123456785" Naziv="Brodski pod jela/smreka" Cijena="194.39" JMJ="m2">
+    <Dimenzija Debljina="19" Sirina="116" Duzina="4000" MjernaJedinica="mm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123456786" Naziv="Opločnik Classic, crna glatka" Cijena="120.27" JMJ="m2">
+    <Dimenzija Debljina="20" Sirina="20" Duzina="8" MjernaJedinica="cm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123456787" Naziv="Opločnik Classic, crna glatka" Cijena="120.27" JMJ="m2">
+    <Dimenzija Debljina="10" Sirina="10" Duzina="8" MjernaJedinica="cm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123456788" Naziv="Opločnik Classic, siva pjeskarena" Cijena="164.39" JMJ="m2">
+    <Dimenzija Debljina="20" Sirina="20" Duzina="8" MjernaJedinica="cm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123456789" Naziv="Opločnik Classic, siva pjeskarena" Cijena="164.39" JMJ="m2">
+    <Dimenzija Debljina="20" Sirina="20" Duzina="8" MjernaJedinica="cm">
+    </Dimenzija>
+  </Artikl>
+  <Artikl Sifra="123" Naziv="kelj" Cijena="505" JMJ="kom">
+    <Dimenzija Debljina="123" Sirina="456" Duzina="789" MjernaJedinica="mm" />
+  </Artikl>
+</Artikli>

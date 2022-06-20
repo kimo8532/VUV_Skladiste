@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Izdatnice>
+  <Izdatnica Tip="IZD" Datum="20.06.2021" IznosIzlaz="1605.84">
+    <Artikl Sifra="123456780" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456783" Kolicina="4">
+    </Artikl>
+    <Artikl Sifra="123456786" Kolicina="1">
+    </Artikl>
+    <Artikl Sifra="123456785" Kolicina="3">
+    </Artikl>
+  </Izdatnica>
+  <Izdatnica Tip="IZD" Datum="21.06.2021" IznosIzlaz="4095.42">
+    <Artikl Sifra="123456781" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456782" Kolicina="20">
+    </Artikl>
+    <Artikl Sifra="123456783" Kolicina="25">
+    </Artikl>
+    <Artikl Sifra="123456784" Kolicina="12">
+    </Artikl>
+  </Izdatnica>
+  <Izdatnica Tip="IZD" Datum="22.06.2021" IznosIzlaz="12200.55">
+    <Artikl Sifra="123456788" Kolicina="14">
+    </Artikl>
+    <Artikl Sifra="123456789" Kolicina="19">
+    </Artikl>
+    <Artikl Sifra="123456787" Kolicina="3">
+    </Artikl>
+    <Artikl Sifra="123456785" Kolicina="33">
+    </Artikl>
+  </Izdatnica>
+  <Izdatnica Tip="IZD" Datum="23.06.2021" IznosIzlaz="1625.84">
+    <Artikl Sifra="123456783" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456785" Kolicina="4">
+    </Artikl>
+    <Artikl Sifra="123456784" Kolicina="1">
+    </Artikl>
+    <Artikl Sifra="123456789" Kolicina="3">
+    </Artikl>
+  </Izdatnica>
+  <Izdatnica Tip="IZD" Datum="24.06.2021" IznosIzlaz="1331.43">
+    <Artikl Sifra="123456780" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456781" Kolicina="4">
+    </Artikl>
+    <Artikl Sifra="123456782" Kolicina="1">
+    </Artikl>
+    <Artikl Sifra="123456783" Kolicina="3">
+    </Artikl>
+  </Izdatnica>
+  <Izdatnica Tip="IZD" Datum="25.06.2021" IznosIzlaz="1331.69">
+    <Artikl Sifra="123456784" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456785" Kolicina="4">
+    </Artikl>
+    <Artikl Sifra="123456786" Kolicina="1">
+    </Artikl>
+    <Artikl Sifra="123456787" Kolicina="3">
+    </Artikl>
+  </Izdatnica>
+  <Izdatnica Tip="IZD" Datum="26.06.2021" IznosIzlaz="1914.51">
+    <Artikl Sifra="123456788" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456789" Kolicina="4">
+    </Artikl>
+    <Artikl Sifra="123456780" Kolicina="1">
+    </Artikl>
+    <Artikl Sifra="123456781" Kolicina="3">
+    </Artikl>
+  </Izdatnica>
+  <Izdatnica Tip="IZD" Datum="06.06.2022" IznosIzlaz="6300.00">
+    <Artikl Sifra="123456780" Kolicina="50" />
+  </Izdatnica>
+</Izdatnice>

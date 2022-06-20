@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Primke>
+  <Primka Tip="PRM" Datum="19.06.2021" IznosUlaz="1605.84">
+    <Artikl Sifra="123456780" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456783" Kolicina="4">
+    </Artikl>
+    <Artikl Sifra="123456786" Kolicina="1">
+    </Artikl>
+    <Artikl Sifra="123456785" Kolicina="3">
+    </Artikl>
+  </Primka>
+  <Primka Tip="PRM" Datum="20.06.2021" IznosUlaz="7820.50">
+    <Artikl Sifra="123456781" Kolicina="32">
+    </Artikl>
+    <Artikl Sifra="123456782" Kolicina="40">
+    </Artikl>
+    <Artikl Sifra="123456783" Kolicina="10">
+    </Artikl>
+    <Artikl Sifra="123456784" Kolicina="30">
+    </Artikl>
+  </Primka>
+  <Primka Tip="PRM" Datum="21.06.2021" IznosUlaz="23938.06">
+    <Artikl Sifra="123456788" Kolicina="53">
+    </Artikl>
+    <Artikl Sifra="123456789" Kolicina="42">
+    </Artikl>
+    <Artikl Sifra="123456787" Kolicina="11">
+    </Artikl>
+    <Artikl Sifra="123456785" Kolicina="36">
+    </Artikl>
+  </Primka>
+  <Primka Tip="PRM" Datum="22.06.2021" IznosUlaz="16467.04">
+    <Artikl Sifra="123456783" Kolicina="43">
+    </Artikl>
+    <Artikl Sifra="123456785" Kolicina="24">
+    </Artikl>
+    <Artikl Sifra="123456784" Kolicina="11">
+    </Artikl>
+    <Artikl Sifra="123456789" Kolicina="53">
+    </Artikl>
+  </Primka>
+  <Primka Tip="PRM" Datum="06.06.2022" IznosUlaz="1331.43">
+    <Artikl Sifra="123456780" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456781" Kolicina="4">
+    </Artikl>
+    <Artikl Sifra="123456782" Kolicina="1">
+    </Artikl>
+    <Artikl Sifra="123456783" Kolicina="3">
+    </Artikl>
+  </Primka>
+  <Primka Tip="PRM" Datum="24.06.2021" IznosUlaz="1331.69">
+    <Artikl Sifra="123456784" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456785" Kolicina="4">
+    </Artikl>
+    <Artikl Sifra="123456786" Kolicina="1">
+    </Artikl>
+    <Artikl Sifra="123456787" Kolicina="3">
+    </Artikl>
+  </Primka>
+  <Primka Tip="PRM" Datum="25.06.2021" IznosUlaz="1914.51">
+    <Artikl Sifra="123456788" Kolicina="5">
+    </Artikl>
+    <Artikl Sifra="123456789" Kolicina="4">
+    </Artikl>
+    <Artikl Sifra="123456780" Kolicina="1">
+    </Artikl>
+    <Artikl Sifra="123456781" Kolicina="3">
+    </Artikl>
+  </Primka>
+  <Primka Tip="PRM" Datum="06.06.2022" IznosUlaz="6446.10">
+    <Artikl Sifra="123456784" Kolicina="10" />
+    <Artikl Sifra="123456780" Kolicina="50" />
+  </Primka>
+  <Primka Tip="PRM" Datum="07.06.2022" IznosUlaz="29039.00">
+    <Artikl Sifra="123456780" Kolicina="100" />
+    <Artikl Sifra="123456789" Kolicina="100" />
+  </Primka>
+</Primke>
