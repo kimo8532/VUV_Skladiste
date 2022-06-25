@@ -1,1 +1,1 @@
-﻿namespace VUV_skladiste{    internal interface IDokument    {         public static void IstonirajRacun() { }        public static void IspisNajnovijihDokumenata() { }    }}
+﻿namespace VUV_skladiste{    internal interface IDokument    {         public static void IstonirajRacun() { }        public static void IspisNajnovijihDokumenata() { }    }}

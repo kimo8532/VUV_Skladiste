@@ -109,5 +109,8 @@
             ConsoleTable table5 = new ConsoleTable("Kolicina", "Artikli", "Cijena", "Iznos");            Console.WriteLine($"{dokuments[4].Tip} {dokuments[4].Datum} {dokuments[4].IznosUlaz} {dokuments[4].IznosIzlaz}");            i = 0;            foreach (Artikl artikl in dokuments[4].Artikl)            {                table5.AddRow((decimal)dokuments[4].Kolicina[i], artikl.NazivArtikla, (decimal)artikl.Cijena, (decimal)dokuments[4].Kolicina[i] * artikl.Cijena);                i++;            }            table5.Write();
             Console.ReadKey();
         }
+        ~Dokument()
+        {
+        }
     }
 }

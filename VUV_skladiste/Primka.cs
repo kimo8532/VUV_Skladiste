@@ -48,4 +48,4 @@
                         break;
                     }
                 }
-            } while (true);            return new Primka(DateTime.Now.ToString(), artiklizaprimku, kolicinazaprimku);        }    }}
+            } while (true);            return new Primka(DateTime.Now.ToString(), artiklizaprimku, kolicinazaprimku);        }    }}
