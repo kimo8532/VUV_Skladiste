@@ -34,6 +34,7 @@
                     if (primka.Attributes["Istonirano"] == null)
                     {
                         noviartikli.Clear();
+                        kolicina.Clear();
                         foreach (XmlNode xmlartikl in primka.ChildNodes)
                         {
                             if (Artikl.DohvatiArtikl(xmlartikl.Attributes["Sifra"].Value) == null)
@@ -46,7 +47,7 @@
                                 kolicina.Add(Convert.ToInt32(xmlartikl.Attributes["Kolicina"].Value));
                             }
                         }
-                        primkaList.Add(new Primka(primka.Attributes["Datum"].Value, noviartikli, kolicina));
+                        primkaList.Add(new Primka(primka.Attributes["Datum"].Value, new List<Artikl>(noviartikli), new List<decimal>(kolicina)));
                     }
                 }
                 return primkaList;
@@ -77,6 +78,7 @@
                     if (izdatnica.Attributes["Istonirano"] == null)
                     {
                         noviartikli.Clear();
+                        kolicina.Clear();
                         foreach (XmlNode xmlartikl in izdatnica.ChildNodes)
                         {
                             if (Artikl.DohvatiArtikl(xmlartikl.Attributes["Sifra"].Value) == null)
@@ -89,7 +91,7 @@
                                 kolicina.Add(Convert.ToInt32(xmlartikl.Attributes["Kolicina"].Value));
                             }
                         }
-                        IzdatnicaList.Add(new Izdatnica(izdatnica.Attributes["Datum"].Value, noviartikli, kolicina));
+                        IzdatnicaList.Add(new Izdatnica(izdatnica.Attributes["Datum"].Value, new List<Artikl>(noviartikli), new List<decimal>(kolicina)));
                     }
                 }
                 return IzdatnicaList;
